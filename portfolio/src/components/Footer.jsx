@@ -12,13 +12,13 @@ function Footer() {
         </div>
         <ul className="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
           <li>
-            <a className='text-xl text-white' href="https://www.instagram.com">Instagram</a>
+            <a className='text-xl text-white' target='new' href="https://www.instagram.com">Instagram</a>
           </li>
           <li>
-            <a className='text-xl text-white' href="https://www.facebook.com">Facebook</a>
+            <a className='text-xl text-white' target='new' href="https://www.facebook.com">Facebook</a>
           </li>
           <li>
-            <a className='text-xl text-white' href="https://www.twitter.com">Twitter</a>
+            <a className='text-xl text-white' target='new' href="https://www.twitter.com">Twitter</a>
           </li>
         </ul>
       </div>

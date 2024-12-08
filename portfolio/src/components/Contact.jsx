@@ -78,7 +78,7 @@ const Contact = React.forwardRef((props, ref) => (
                 <textarea placeholder='Message' rows="6"
                     class="w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-teal-500  focus:bg-gray-100"></textarea>
                 <button type='button'
-                    class="text-black bg-white  hover:bg-teal-500 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
+                    class="whitespace-nowrap mt-3 px-8 py-3 font-semibold border rounded-xl border-red-500 bg-transparent dark:border-red-500 dark:text-gray-100 hover:bg-red-400 hover:text-gray-950 transition ease-out duration-500 w-full">Send</button>
             </form>
             
         </div>

@@ -6,24 +6,24 @@ const Home = React.forwardRef(({navigate}, ref) => (
 
       <div className="flex w-full items-center justify-center -mt-12 ">
         <div className="flex flex-col  gap-y-5">
-          <h1 className="text-8xl font-Oleo text-teal-600">Hello I'm,</h1>
+          <h1 className="text-8xl font-Dancing text-white"><span className="text-red-400">Hello</span> I'm,</h1>
           <h1 className="text-6xl  text-white whitespace-nowrap ">
-            Muhammad Junaid Arshad
+            Muhammad <span className="text-teal-400">Junaid</span> Arshad
           </h1>
-          <h2 className="text-5xl text-red-500 px-1">
-            A Software Engineer from Quetta, Pakistan.{" "}
+          <h2 className="text-5xl text-white px-1">
+            A <span className="text-red-400">Software Engineer</span> and <span className="text-teal-400">Graphics Designer</span> from<br/> Quetta, Pakistan.{" "}
           </h2>
           <div className="flex flex-row h-20 items-center justify-center gap-x-10 mt-10">
             <button
               
-              className="bg-red-500 px-4 py-3 text-xl text-white rounded-xl hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 hover:text-white"
+              className="whitespace-nowrap mt-3 px-8 py-3 font-semibold border rounded-xl border-red-500 bg-transparent dark:border-red-500 dark:text-gray-100 hover:bg-red-400 hover:text-gray-950 transition ease-out duration-500"
               onClick={() => navigate("contact")}
             >
               Contact Me
             </button>
             <button
               
-              className="bg-red-500 px-4 py-3 text-xl text-white rounded-xl hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 hover:text-white"
+              className="whitespace-nowrap mt-3 px-8 py-3 font-semibold border rounded-xl border-red-500 bg-transparent dark:border-red-500 dark:text-gray-100 hover:bg-red-400 hover:text-gray-950 transition ease-out duration-500"
               onClick={() => navigate("about")}
             >
               About Me
