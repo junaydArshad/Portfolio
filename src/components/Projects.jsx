@@ -41,7 +41,7 @@ const Projects = React.forwardRef((props, ref) => (
           </div>
         </div>
 
-        {/* Project 3 */}
+        <span className="absolute right-1 w-72 h-72 md:w-96 md:h-96 bg-teal-500 rounded-full blur-300"></span>
         <div className="flex flex-col sm:flex-row bg-white text-black w-11/12 sm:w-10/12 md:w-1/2 h-auto rounded-3xl p-5">
           <img 
             className="h-44 w-44 rounded-xl hover:scale-105 transition ease-in-out duration-300 mx-auto sm:mx-10"

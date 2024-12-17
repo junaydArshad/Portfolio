@@ -45,7 +45,7 @@ const Home = React.forwardRef(({ navigate }, ref) => (
       </div>
 
       
-      <span className="absolute bottom-10 right-0 w-72 h-72 md:w-96 md:h-96 bg-teal-500 rounded-full blur-300"></span>
+      
     </div>
   </>
 ));

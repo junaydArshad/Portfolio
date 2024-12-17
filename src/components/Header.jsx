@@ -1,5 +1,3 @@
-// Tailwind CSS Version of Responsive Header/Navbar
-
 import React, { useState } from "react";
 import resume from "../assets/Resume.pdf";
 

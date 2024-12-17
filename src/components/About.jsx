@@ -6,7 +6,6 @@ const About = React.forwardRef((props, ref) => (
   >
     
    
-
     
     <div className="lg:ml-96 lg:mr-96 text-center lg:text-left px-4">
       
@@ -24,6 +23,7 @@ const About = React.forwardRef((props, ref) => (
         problem-solving abilities, and passion for technology to contribute to
         innovative projects.
       </h1>
+      
     </div>
   </div>
 ));

@@ -29,8 +29,8 @@ const Contact = React.forwardRef((props, ref) => {
     
 return(
 <div ref={ref} class=" relative min-h-screen flex items-center justify-center bg-black text-white px-4">
+<span className="absolute right-1 w-72 h-72 md:w-96 md:h-96 bg-red-500 rounded-full blur-300"></span>
   <div class="w-full max-w-lg p-8 rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 shadow-lg">
-  <span className="absolute left-1 w-96 h-96 bg-teal-500 rounded-full  blur-300"></span>
     <h2 class="text-3xl font-bold text-white mb-6">Let's Talk</h2>
     <p class="text-gray-400 mb-6">Have an idea or need help? Drop me a message, and I'll get back to you!</p>
     
@@ -61,7 +61,7 @@ return(
           class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
         />
       </div>
-      
+      <span className="absolute left-1 w-72 h-72 md:w-96 md:h-96 bg-teal-500 rounded-full blur-300"></span>
       
       <div>
         <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Your Message</label>
@@ -74,7 +74,7 @@ return(
           class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
         ></textarea>
       </div>
-    <span className="absolute bottom-20 w-96 h-96 bg-red-500 rounded-full  blur-300"></span>
+    
       
       <div>
         <button 
@@ -85,6 +85,7 @@ return(
         </button>
       </div>
     </form>
+    
   </div>
 </div>
 )
