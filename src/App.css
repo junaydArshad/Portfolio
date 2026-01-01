@@ -989,9 +989,9 @@ section {
   }
 
   .hero {
-    padding-top: 100px;
+    padding-top: 180px;
     min-height: auto;
-    padding-bottom: 60px;
+    padding-bottom: 140px;
   }
 
   .scroll-indicator {
@@ -1110,8 +1110,12 @@ section {
   }
 
   .hero {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 150px;
+    padding-bottom: 110px;
+  }
+
+  .hero-content {
+    padding-top: 30px;
   }
 
   .hero-title {
