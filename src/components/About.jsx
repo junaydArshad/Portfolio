@@ -13,7 +13,7 @@ const About = () => {
           <p className="about-text">
             Software Engineer with expertise in MERN stack and Shopify app development. I have experience building scalable
             web applications and custom Shopify solutions that enhance merchant experiences and drive growth. Open to both
-            on-site and remote opportunities in the US and Middle East.
+            on-site and remote opportunities.
           </p>
           <div className="skills">
             <h3 className="skills-title">Skills</h3>
