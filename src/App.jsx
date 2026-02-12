@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
@@ -7,7 +6,6 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Timeline from './components/Timeline'
-import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -41,50 +39,6 @@ function App() {
   }, [])
 
   useEffect(() => {
-    // Navbar background on scroll
-    const navbar = document.querySelector('.navbar')
-    
-    const handleScroll = () => {
-      const currentScroll = window.pageYOffset
-      const theme = document.documentElement.getAttribute('data-theme')
-      const isDark = theme === 'dark'
-      
-      if (currentScroll > 50) {
-        navbar.style.backgroundColor = isDark 
-          ? 'rgba(18, 18, 18, 0.98)' 
-          : 'rgba(255, 255, 255, 0.98)'
-        navbar.style.boxShadow = isDark
-          ? '0 2px 10px rgba(0, 0, 0, 0.3)'
-          : '0 2px 10px rgba(0, 0, 0, 0.05)'
-      } else {
-        navbar.style.backgroundColor = isDark
-          ? 'rgba(18, 18, 18, 0.95)'
-          : 'rgba(255, 255, 255, 0.95)'
-        navbar.style.boxShadow = 'none'
-      }
-    }
-
-    // Set initial state
-    handleScroll()
-
-    window.addEventListener('scroll', handleScroll)
-    
-    // Update on theme change
-    const observer = new MutationObserver(() => {
-      handleScroll()
-    })
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['data-theme']
-    })
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-      observer.disconnect()
-    }
-  }, [])
-
-  useEffect(() => {
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,
@@ -101,7 +55,7 @@ function App() {
     }, observerOptions)
 
     const animatedElements = document.querySelectorAll('.project-card, .experience-item')
-    
+
     animatedElements.forEach(el => {
       el.style.opacity = '0'
       el.style.transform = 'translateY(20px)'
@@ -115,7 +69,7 @@ function App() {
   }, [])
 
   return (
-    <ThemeProvider>
+    <>
       <Navbar />
       <main>
         <Hero />
@@ -127,7 +81,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </ThemeProvider>
+    </>
   )
 }
 
