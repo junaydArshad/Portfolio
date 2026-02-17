@@ -1,55 +1,55 @@
 const Timeline = () => {
   const milestones = [
     {
-      year: '2021',
-      title: 'Started Freelancing',
-      description: 'Began providing services on Fiverr, working with diverse international clients',
+      year: '2021 - 2023',
+      title: 'Full Stack Beginnings',
+      description: 'Mastered the MERN stack while freelancing on Fiverr, delivering 50+ web solutions to international clients.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
         </svg>
       )
     },
     {
       year: '2024',
-      title: 'Graduated',
-      description: 'Completed BS Software Engineering from BUITEMS',
+      title: 'Software Engineering Graduate',
+      description: 'Completed BS in Software Engineering from BUITEMS, building a core foundation in algorithms and architectures.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-          <path d="M6 12v5c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-5"/>
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-5" />
         </svg>
       )
     },
     {
-      year: '2024',
-      title: 'Joined Nedian Technologies',
-      description: 'Started as Shopify App Developer, focusing on AI-powered solutions',
+      year: '2024 - Present',
+      title: 'AI Product Engineering',
+      description: 'Joined Nedian Technologies. Led development of Growthly AI and Talkify, integrating LLMs and Voice AI into SaaS.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-        </svg>
-      )
-    },
-    {
-      year: '2024-2025',
-      title: 'Major Projects',
-      description: 'Built Growthly AI, Talkify, and Ciphermail - showcasing full-stack expertise',
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
         </svg>
       )
     },
     {
       year: '2025',
-      title: 'Current',
-      description: 'Continuing to build scalable solutions and drive growth for Shopify merchants',
+      title: 'The AI Transition',
+      description: 'Deep-diving into Generative AI, RAG architectures, and Computer Vision to build the next generation of intelligent web.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <circle cx="12" cy="12" r="10"/>
-          <polyline points="12 6 12 12 16 14"/>
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        </svg>
+      )
+    },
+    {
+      year: 'Current',
+      title: 'AI Engineer & Architect',
+      description: 'Designing autonomous agents and intelligent RAG systems for complex business workflows.',
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 14" />
         </svg>
       )
     }

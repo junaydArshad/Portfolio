@@ -5,10 +5,11 @@ import Background3D from './Background3D'
 
 const Hero = () => {
   const typewriterTexts = [
-    "Full Stack Developer",
-    "UI/UX Enthusiast",
-    "Problem Solver",
-    "Tech Explorer"
+    "Full Stack MERN Developer",
+    "Evolving into AI Engineer...",
+    "LLM & RAG Specialist",
+    "Generative AI Architect",
+    "Computer Vision Enthusiast"
   ]
 
   return (
@@ -42,9 +43,9 @@ const Hero = () => {
           >
             <Typewriter
               texts={typewriterTexts}
-              speed={100}
-              deleteSpeed={50}
-              delay={2000}
+              speed={80}
+              deleteSpeed={40}
+              delay={1500}
             />
           </motion.div>
 
@@ -54,8 +55,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="hero-subtitle"
           >
-            Crafting immersive digital experiences with modern web technologies.
-            Specializing in building exceptional, high-quality websites and applications.
+            Bridging the gap between robust Full-Stack development and cutting-edge
+            Artificial Intelligence. Specializing in LLMs, RAG, and Generative AI.
           </motion.p>
 
           <motion.div
@@ -64,8 +65,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="hero-cta"
           >
-            <a href="#projects" className="btn btn-primary glow-text">View Work</a>
-            <a href="#contact" className="btn btn-secondary">Contact Me</a>
+            <a href="#projects" className="btn btn-primary glow-text">Explore AI Projects</a>
+            <a href="#contact" className="btn btn-secondary">Get In Touch</a>
           </motion.div>
         </div>
       </div>

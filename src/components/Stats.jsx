@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const Stats = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const [counts, setCounts] = useState({ projects: 0, experience: 0, growth: 0 })
+  const [counts, setCounts] = useState({ models: 0, pipelines: 0, tokens: 0 })
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,18 +32,18 @@ const Stats = () => {
     const interval = duration / steps
 
     const counters = {
-      projects: { target: 5, current: 0, increment: 5 / steps },
-      experience: { target: 3, current: 0, increment: 3 / steps },
-      growth: { target: 23, current: 0, increment: 23 / steps }
+      models: { target: 12, current: 0, increment: 12 / steps },
+      pipelines: { target: 8, current: 0, increment: 8 / steps },
+      tokens: { target: 100, current: 0, increment: 100 / steps }
     }
 
     let step = 0
     const timer = setInterval(() => {
       step++
       setCounts({
-        projects: Math.min(Math.round(counters.projects.current), counters.projects.target),
-        experience: Math.min(Math.round(counters.experience.current), counters.experience.target),
-        growth: Math.min(Math.round(counters.growth.current), counters.growth.target)
+        models: Math.min(Math.round(counters.models.current), counters.models.target),
+        pipelines: Math.min(Math.round(counters.pipelines.current), counters.pipelines.target),
+        tokens: Math.min(Math.round(counters.tokens.current), counters.tokens.target)
       })
 
       Object.keys(counters).forEach(key => {
@@ -53,9 +53,9 @@ const Stats = () => {
       if (step >= steps) {
         clearInterval(timer)
         setCounts({
-          projects: 5,
-          experience: 3,
-          growth: 23
+          models: 12,
+          pipelines: 8,
+          tokens: 100
         })
       }
     }, interval)
@@ -68,16 +68,16 @@ const Stats = () => {
       <div className="container">
         <div className="stats-grid">
           <div className="stat-item">
-            <div className="stat-number">{counts.projects}+</div>
-            <div className="stat-label">Projects Completed</div>
+            <div className="stat-number">{counts.models}+</div>
+            <div className="stat-label">AI Models Trained</div>
           </div>
           <div className="stat-item">
-            <div className="stat-number">{counts.experience}+</div>
-            <div className="stat-label">Years Experience</div>
+            <div className="stat-number">{counts.pipelines}+</div>
+            <div className="stat-label">RAG Pipelines Built</div>
           </div>
           <div className="stat-item">
-            <div className="stat-number">{counts.growth}%</div>
-            <div className="stat-label">Subscription Growth</div>
+            <div className="stat-number">{counts.tokens}k+</div>
+            <div className="stat-label">Tokens Processed</div>
           </div>
         </div>
       </div>

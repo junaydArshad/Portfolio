@@ -1,20 +1,22 @@
 const Experience = () => {
   const experiences = [
     {
-      title: 'Shopify App Developer',
+      title: 'AI Product Engineer',
       company: 'Nedian Technologies – Quetta, Pakistan',
       date: 'Dec 2024 – Current',
       descriptions: [
-        'Experienced in developing both custom and public Shopify apps with a focus on increasing store performance and user engagement. Specialized in integrating LLMs to deliver personalized product recommendations on Shopify storefronts. Proficient in Remix, Node.js, Next.js, Hydrogen, and Polaris. Successfully contributed to a 23% increase in subscription growth for Shopify merchants.',
-        'Worked on Growthly AI — a Shopify app that analyzes customer behavior using AI to automatically generate hyper-personalized subscription bundles, boosting retention and eliminating the need for manual curation.'
+        'Leading the architectural shift towards AI-native applications. Specialized in integrating Large Language Models (LLMs) and RAG pipelines into production Shopify apps to deliver intelligent features like automated bundling and voice discovery.',
+        'Core developer of Growthly AI — a GenAI platform that leverages customer behavior data to automate hyper-personalized commerce flows, successfully achieving a 23% increase in merchant subscription growth.',
+        'Expertise in orchestrating hybrid stacks combining Remix/Node.js with AI services (OpenAI, LangChain, ChromaDB).'
       ]
     },
     {
-      title: 'Freelancer',
+      title: 'Full Stack Freelancer',
       company: 'Fiverr – Quetta, Pakistan',
       date: 'Mar 2021 – May 2024',
       descriptions: [
-        'Provided services to a diverse range of clients from various industries. Honed skills in managing projects independently, meeting client expectations, and delivering quality work within set timelines. Strengthened communication abilities and learned the importance of adaptability and client satisfaction in a fast-paced, results-oriented environment.'
+        'Delivered 50+ high-quality web applications for a global client base, mastering the MERN stack and clean code principles. Developed a reputation for rapid problem-solving and adaptable technical leadership in fast-paced environments.',
+        'Progressively transitioned from traditional web development to data-driven and AI-enhanced solutions towards the end of my freelance tenure.'
       ]
     }
   ]

@@ -3,18 +3,18 @@ import SkillRadar from './SkillRadar'
 
 const About = () => {
   const skillsConfig = [
-    { name: 'Frontend', level: 0.95 },
+    { name: 'AI/ML', level: 0.95 },
+    { name: 'RAG/GenAI', level: 0.90 },
     { name: 'Backend', level: 0.85 },
-    { name: 'Shopify', level: 0.90 },
-    { name: 'UI/UX', level: 0.80 },
-    { name: 'DevOps', level: 0.70 },
-    { name: 'AI/ML', level: 0.75 }
+    { name: 'MERN Stack', level: 0.90 },
+    { name: 'DevOps', level: 0.75 },
+    { name: 'UI/UX', level: 0.70 }
   ]
 
   const technologies = [
-    'React', 'Node.js', 'Next.js', 'TypeScript', 'Shopify API', 'PostgreSQL',
-    'MongoDB', 'Express.js', 'Remix', 'Hydrogen', 'Polaris', 'Python',
-    'Java', 'JavaScript', 'CSS', 'WordPress'
+    'Python', 'PyTorch', 'TensorFlow', 'LangChain', 'OpenAI API', 'Hugging Face',
+    'ChromaDB', 'Pinecone', 'React', 'Node.js', 'Next.js', 'TypeScript',
+    'PostgreSQL', 'MongoDB', 'Docker', 'AWS'
   ]
 
   return (
@@ -26,7 +26,7 @@ const About = () => {
           viewport={{ once: true }}
           className="section-title gradient-text"
         >
-          About Me
+          My Journey
         </motion.h2>
 
         <div className="about-grid">
@@ -38,16 +38,18 @@ const About = () => {
             style={{ padding: '2rem', borderRadius: '1rem' }}
           >
             <p className="about-text">
-              Software Engineer with expertise in <span className="text-highlight">MERN stack</span> and <span className="text-highlight">Shopify app development</span>.
-              I specialize in building scalable web applications and custom commerce solutions that enhance merchant experiences and drive growth.
+              Passionate <span className="text-highlight">AI Engineer</span> with a strong foundation in <span className="text-highlight">Full-Stack Development (MERN)</span>.
+              My expertise lies in building intelligent systems that leverage <span className="text-highlight">Large Language Models (LLMs)</span>,
+              <span className="text-highlight">Retrieval-Augmented Generation (RAG)</span>, and <span className="text-highlight">Computer Vision</span>.
             </p>
             <p className="about-text">
-              With a passion for problem-solving and a deep understanding of modern web technologies, I create seamless, high-performance digital experiences.
-              Open to both on-site and remote opportunities.
+              I am dedicated to bridging the gap between web architecture and machine intelligence,
+              creating high-performance applications that are not just functional, but smart.
+              My background in build scalable commerce solutions helps me approach AI with a production-first mindset.
             </p>
 
             <div className="tech-stack" style={{ marginTop: '2rem' }}>
-              <h3 className="skills-title" style={{ marginBottom: '1rem' }}>Technologies</h3>
+              <h3 className="skills-title" style={{ marginBottom: '1rem' }}>AI & Web Stack</h3>
               <div className="skills-grid">
                 {technologies.map((tech, index) => (
                   <motion.span

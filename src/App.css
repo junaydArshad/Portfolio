@@ -1,33 +1,32 @@
 :root {
-  /* Antigravity Palette */
-  --primary-color: #BB86FC;
-  /* Neon Purple */
-  --primary-variant: #3700B3;
-  /* Deep Blue */
-  --secondary-color: #03DAC6;
-  /* Cyan */
-  --bg-color: #050505;
-  /* Deep Space Black */
-  --bg-secondary: #121212;
-  /* Darker Surface */
-  --surface-color: #1E1E1E;
-  --text-primary: #E0E0E0;
-  --text-secondary: #A0A0A0;
+  /* Monochrome Palette */
+  --primary-color: #FFFFFF;
+  /* White */
+  --primary-variant: #E0E0E0;
+  /* Light Grey */
+  --secondary-color: #808080;
+  /* Grey */
+  --bg-color: #000000;
+  /* Absolute Black */
+  --bg-secondary: #0A0A0A;
+  /* Deep Black */
+  --surface-color: #121212;
+  --text-primary: #FFFFFF;
+  --text-secondary: #AAAAAA;
   --border-color: rgba(255, 255, 255, 0.1);
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-blur: blur(12px);
-  --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  /* Bouncy/Physics feel */
-  --glow-shadow: 0 0 20px rgba(187, 134, 252, 0.3);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(15px);
+  --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+  /* Smoother Physics feel */
+  --glow-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 [data-theme="light"] {
-  /* Force Dark Mode for now, or define light mode if really needed later. 
-     For Antigravity look, we prefer dark. Keep these as fallbacks or just map to dark. */
-  --primary-color: #BB86FC;
-  --bg-color: #050505;
-  --text-primary: #E0E0E0;
+  /* Force Monochrome Dark Mode for the Space Theme */
+  --primary-color: #FFFFFF;
+  --bg-color: #000000;
+  --text-primary: #FFFFFF;
 }
 
 * {
@@ -62,7 +61,7 @@ body {
 }
 
 .glow-text {
-  text-shadow: 0 0 10px rgba(187, 134, 252, 0.5);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 .gradient-text {
@@ -340,9 +339,9 @@ body {
 
 .btn-primary:hover:not(:disabled) {
   background-color: var(--primary-color);
-  box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
-  filter: brightness(1.2);
+  filter: brightness(0.9);
 }
 
 .btn-secondary {
@@ -352,9 +351,9 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: rgba(187, 134, 252, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-color);
-  box-shadow: 0 0 20px rgba(187, 134, 252, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
 
@@ -1340,7 +1339,7 @@ section {
 .social-link:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--primary-color);
-  box-shadow: 0 0 15px rgba(187, 134, 252, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
 
@@ -1383,7 +1382,7 @@ section {
 .form-textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.1);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05);
 }
 
 .form-submit {

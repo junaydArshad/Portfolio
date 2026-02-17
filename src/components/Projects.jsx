@@ -3,48 +3,51 @@ import ProjectCaseStudy from './ProjectCaseStudy'
 const Projects = () => {
   const projects = [
     {
+      title: 'Falcon 9 & Falcon Heavy Launch Prediction',
+      date: 'Space AI Project',
+      description: 'Applied advanced machine learning algorithms to predict the success rates of SpaceX Falcon 9 and Falcon Heavy launches. Leveraged historical data-driven insights to enhance predictive accuracy, showcasing the power of AI in space mission reliability.',
+      problem: 'Space mission planning requires high reliability and predictive accuracy to minimize risks and optimize launch windows.',
+      approach: 'Developed and trained classification models (Logistic Regression, SVM, KNN) to analyze historical launch data. Implemented feature engineering on landing outcomes and orbital parameters.',
+      impact: 'Demonstrated potential for increased reliability in mission planning. achieved high accuracy in predicting successful booster landings.',
+      tech: ['Python', 'Scikit-Learn', 'Pandas', 'Data Analysis', 'SpaceX API'],
+      link: null
+    },
+    {
       title: 'Growthly AI',
-      date: 'Dec 2024 - Jun 2025',
-      description: 'Shopify application that leverages artificial intelligence to analyze customer behavior and purchasing patterns. The app automatically generates hyper-personalized subscription bundles, enhancing customer retention and reducing churn.',
-      problem: 'Merchants struggled with manual curation of subscription bundles, leading to low retention rates and time-consuming processes. Personalization at scale was nearly impossible without AI assistance.',
-      approach: 'Developed an AI-powered system that analyzes customer behavior patterns, purchase history, and preferences to automatically generate personalized subscription bundles. Implemented machine learning models to predict optimal product combinations.',
-      impact: 'Contributed to a 23% increase in subscription growth for Shopify merchants. Reduced manual curation time by 80% and improved customer retention rates significantly.',
-      tech: ['React', 'Node.js', 'Shopify API', 'PostgreSQL', 'AI/ML APIs'],
+      date: 'GenAI SaaS',
+      description: 'A cutting-edge SaaS platform that leverages Large Language Models to analyze customer behavior and automate hyper-personalized subscription flows for Shopify merchants.',
+      problem: 'Merchants struggled with manual curation of subscription bundles, leading to low retention rates. Personalization at scale was nearly impossible without AI assistance.',
+      approach: 'Architected an AI-powered engine focusing on RAG (Retrieval-Augmented Generation) to predict optimal product combinations and customer preferences.',
+      impact: 'Contributed to a 23% increase in subscription growth for merchants. Reduced manual curation time by 80% through automated intelligent bundling.',
+      tech: ['React', 'Node.js', 'OpenAI', 'RAG Pipelines', 'Shopify API', 'PostgreSQL'],
       link: null
     },
     {
       title: 'Talkify',
-      date: 'Shopify App',
-      description: 'AI-powered voice search platform built as a full-stack Shopify app enabling voice-activated product search.',
-      problem: 'E-commerce stores lacked accessible voice search capabilities, limiting shopping experiences for users who prefer voice interactions or have accessibility needs.',
-      approach: 'Architected a React/TypeScript frontend with Shopify App Bridge integration and Node.js backend. Integrated AI for speech-to-text and intelligent keyword extraction. Implemented real-time audio processing with Web Audio API.',
-      impact: 'Enabled hands-free shopping experience, improved accessibility, and provided merchants with a competitive edge through innovative voice search technology.',
-      tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Web Audio API'],
+      date: 'AI Voice Search',
+      description: 'AI-powered voice search platform built as a full-stack Shopify app, enabling futuristic voice-activated product discovery for modern e-commerce stores.',
+      problem: 'Traditional search methods are often slow and lack accessibility. Voice search offers a more natural and efficient discovery path.',
+      approach: 'Integrated AI for real-time speech-to-text and intelligent keyword extraction. Implemented web-audio processing for low-latency interactions.',
+      impact: 'Improved accessibility and user engagement. Provided an innovative bridge between voice and traditional commerce.',
+      tech: ['React', 'Node.js', 'Speech AI', 'Web Audio API', 'PostgreSQL'],
       link: 'https://www.talkify.space'
     },
     {
       title: 'Ciphermail',
-      date: 'Email Platform',
-      description: 'End-to-end encrypted email application ensuring complete privacy and security for user communications.',
-      problem: 'Existing email services lack true privacy - servers can access message content, creating security vulnerabilities and privacy concerns for sensitive communications.',
-      approach: 'Implemented client-side encryption with Web Crypto API (RSA-OAEP, AES-256-GCM) ensuring messages are encrypted before transmission. Developed secure key management, JWT authentication, and maintained zero-knowledge architecture.',
-      impact: 'Provided users with complete email privacy where servers cannot access plaintext, addressing critical security and privacy needs for sensitive communications.',
-      tech: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Web Crypto API', 'JWT', 'Tailwind CSS'],
+      date: 'Secure Communications',
+      description: 'End-to-end encrypted email application ensuring complete privacy and security, designed for users who demand the highest security standards for their transmissions.',
+      problem: 'Existing email services lack true privacy, creating vulnerabilities for sensitive communications.',
+      approach: 'Implemented client-side encryption with Web Crypto API ensuring messages are encrypted before transmission via a zero-knowledge architecture.',
+      impact: 'Provided absolute email privacy where servers cannot access plaintext, addressing critical security needs.',
+      tech: ['Next.js', 'TypeScript', 'Web Crypto API', 'JWT', 'PostgreSQL'],
       link: 'https://ciphermail.onrender.com/'
     },
     {
-      title: 'Savvy Energy',
-      date: 'Jun 2025',
-      description: 'Collaborated with the Savvy Energy team to develop and optimize a modern, responsive website using cutting-edge web technologies. Implemented clean and scalable front-end components while integrating features that enhanced overall performance. Emphasis was placed on ensuring cross-browser compatibility, accessibility, and adherence to SEO best practices. These efforts resulted in improved site speed, user engagement, and a streamlined UI/UX experience.',
-      tech: ['Web Development', 'Responsive Design', 'SEO'],
+      title: 'Savvy Energy Website',
+      date: 'Optimization Project',
+      description: 'Engineered a modern, highly optimized website for the Savvy Energy team, focusing on maximum performance, accessibility, and clean architectural patterns.',
+      tech: ['React', 'Next.js', 'Performance Optimization', 'SEO'],
       link: 'https://savvy.energy/'
-    },
-    {
-      title: 'Falcon 9 & Falcon Heavy Launch Prediction',
-      date: 'ML Project',
-      description: 'Applied machine learning algorithms to predict the success rates of Falcon 9 and Falcon Heavy launches, leveraging data-driven insights to enhance predictive accuracy. Developed and trained models to analyze historical launch data, showcasing the potential for increased reliability in space mission planning.',
-      tech: ['Python', 'Machine Learning', 'Data Analysis'],
-      link: null
     }
   ]
 
