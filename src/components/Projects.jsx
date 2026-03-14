@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import ProjectCaseStudy from './ProjectCaseStudy'
 
 const Projects = () => {
@@ -54,7 +55,14 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="section-title gradient-text"
+        >
+          Projects
+        </motion.h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <ProjectCaseStudy key={index} project={project} index={index} />

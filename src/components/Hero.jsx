@@ -15,7 +15,31 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <Background3D />
-      <div className="container">
+
+      {/* Ambient orbs */}
+      <div style={{
+        position: 'absolute', top: '15%', right: '8%',
+        width: 'clamp(300px, 40vw, 580px)', height: 'clamp(300px, 40vw, 580px)',
+        background: 'radial-gradient(circle, rgba(56,189,248,0.13) 0%, transparent 70%)',
+        borderRadius: '50%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 0,
+        animation: 'orb-drift 12s ease-in-out infinite'
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '15%', left: '3%',
+        width: 'clamp(200px, 28vw, 420px)', height: 'clamp(200px, 28vw, 420px)',
+        background: 'radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)',
+        borderRadius: '50%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 0,
+        animation: 'orb-drift 16s ease-in-out infinite 3s'
+      }} />
+      <div style={{
+        position: 'absolute', top: '55%', right: '30%',
+        width: 'clamp(100px, 15vw, 220px)', height: 'clamp(100px, 15vw, 220px)',
+        background: 'radial-gradient(circle, rgba(56,189,248,0.07) 0%, transparent 70%)',
+        borderRadius: '50%', filter: 'blur(40px)', pointerEvents: 'none', zIndex: 0,
+        animation: 'pulse 8s ease-in-out infinite 1s'
+      }} />
+
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-content">
           <motion.span
             initial={{ opacity: 0, y: 20 }}

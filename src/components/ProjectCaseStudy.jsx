@@ -14,9 +14,9 @@ const ProjectCaseStudy = ({ project, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className={`project-card glass-panel ${index === 0 ? 'featured' : ''} ${isExpanded ? 'expanded' : ''}`}
       whileHover={{
-        y: -10,
-        boxShadow: "0 20px 40px rgba(0,0,0,0.4)",
-        borderColor: "var(--primary-color)"
+        y: -8,
+        boxShadow: "0 20px 40px rgba(0,0,0,0.5), 0 0 40px rgba(56,189,248,0.12)",
+        borderColor: "rgba(56,189,248,0.4)"
       }}
     >
       <motion.div layout="position" className="project-header">

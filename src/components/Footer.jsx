@@ -1,10 +1,20 @@
 const Footer = () => {
   return (
-    <footer className="footer glass-panel" style={{ borderRadius: 0, borderLeft: 0, borderRight: 0, borderBottom: 0 }}>
-      <div className="container" style={{ textAlign: 'center', padding: '2rem 0' }}>
-        <p className="footer-text" style={{ color: 'var(--text-secondary)' }}>
-          &copy; {new Date().getFullYear()} Muhammad Junaid Arshad | AI Engineer & Product Architect.
-        </p>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-inner">
+          <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
+            &copy; {new Date().getFullYear()}{' '}
+            <span className="footer-name">Muhammad Junaid Arshad</span>
+            <span className="footer-divider">·</span>
+            AI Engineer &amp; Product Architect
+          </p>
+          <div className="footer-links">
+            <a href="mailto:junaidarshad439@gmail.com" className="footer-link">Email</a>
+            <a href="https://www.linkedin.com/in/junayd-arshad/" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+            <a href="https://github.com/junaydArshad" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub</a>
+          </div>
+        </div>
       </div>
     </footer>
   )

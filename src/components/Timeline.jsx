@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 const Timeline = () => {
   const milestones = [
     {
@@ -58,20 +60,38 @@ const Timeline = () => {
   return (
     <section id="timeline" className="timeline">
       <div className="container">
-        <h2 className="section-title">My Journey</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="section-title gradient-text"
+        >
+          My Journey
+        </motion.h2>
         <div className="timeline-container">
           {milestones.map((milestone, index) => (
-            <div key={index} className="timeline-item">
+            <motion.div
+              key={index}
+              className="timeline-item"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
               <div className="timeline-marker">
                 <span className="timeline-icon">{milestone.icon}</span>
                 {index < milestones.length - 1 && <div className="timeline-line"></div>}
               </div>
-              <div className="timeline-content">
+              <motion.div
+                className="timeline-content"
+                whileHover={{ borderColor: 'var(--accent-border)', boxShadow: '0 0 25px rgba(56,189,248,0.12)' }}
+                transition={{ duration: 0.2 }}
+              >
                 <span className="timeline-year">{milestone.year}</span>
                 <h3 className="timeline-title">{milestone.title}</h3>
                 <p className="timeline-description">{milestone.description}</p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -80,4 +100,3 @@ const Timeline = () => {
 }
 
 export default Timeline
-
